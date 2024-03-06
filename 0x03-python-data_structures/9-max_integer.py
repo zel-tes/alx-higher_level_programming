@@ -2,6 +2,8 @@
 def max_integer(my_list=[]):
     if my_list is None:
         return None
+    elif my_list == []:
+        return None
     else:
         max_num = my_list[0]
         for i in range(len(my_list)):
