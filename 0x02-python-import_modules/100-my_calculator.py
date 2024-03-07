@@ -2,7 +2,7 @@
 import sys
 from calculator_1 import add, sub, mul, div
 available_operators = ['+', '-', '*', '/']
-if len(sys.argv) != 4 :
+if len(sys.argv) != 4:
     print("Usage: ./100-my_calculator.py <a> <operator> <b>")
     exit(1)
 else:
@@ -23,5 +23,3 @@ else:
 
 if "__name__" == "__main__":
     main()
-
-
