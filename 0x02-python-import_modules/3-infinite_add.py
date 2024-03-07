@@ -7,3 +7,6 @@ elif len(sys.argv) > 1:
     for n in range(1, len(sys.argv)):
         sum += int((sys.argv[n]))
 print(sum)
+
+if "__name__" == "__main__":
+    main()

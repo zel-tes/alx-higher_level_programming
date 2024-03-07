@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-import hidden_4
-for element in dir(hidden_4):
-    print(element)
+from hidden_4 import *
+for element in dir():
+    if not element.startswith("_"):
+        print(element)
 if "__name__" == "__main__":
     main()
