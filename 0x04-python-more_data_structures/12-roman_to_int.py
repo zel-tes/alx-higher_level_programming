@@ -8,16 +8,16 @@ def roman_to_int(roman_string):
         for i in roman_num:
             if i == 'I':
                 sum += 1
-            if i == 'V':
+            elif i == 'V':
                 sum += 5
-            if i == 'X':
+            elif i == 'X':
                 sum += 10
-            if i == 'L':
+            elif i == 'L':
                 sum += 50
-            if i == 'C':
+            elif i == 'C':
                 sum += 100
-            if i == 'D':
+            elif i == 'D':
                 sum += 500
-            if i == 'M':
+            elif i == 'M':
                 sum += 1000
-            return sum
+        return sum
