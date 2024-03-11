@@ -4,7 +4,7 @@ def magic_calculation(a, b):
     if a < b:
         for i in range(4, 6):
             a -= i
-        c = add(a, -b)
+        c = a - b
         return (c)
     else:
         return sub(a, b)
