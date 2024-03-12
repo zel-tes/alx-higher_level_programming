@@ -1,2 +1,3 @@
 -- list tables in the mysql database
-SHOW TABLES IN mysql
+USE mysql;
+SHOW TABLES
