@@ -1,12 +1,13 @@
 -- lists cities of califonia
-SELECT cities.id, cities.name
-FROM cities
-UNION
-SELECT states_id 
+SELECT states.id
 FROM states
-WHERE cities.states_id = (
+WHERE name = 'California'
+UNION
+SELECT id, name
+FROM cities
+WHERE id IN (
 	SELECT id
 	FROM states
-	WHERE name = California
+	WHERE name = 'California'
 )
 ORDER BY cities.id ASC
