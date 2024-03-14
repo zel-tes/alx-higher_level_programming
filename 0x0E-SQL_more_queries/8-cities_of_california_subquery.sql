@@ -1,11 +1,7 @@
 -- lists cities of califonia
-SELECT states.id
-FROM states
-WHERE name = 'California'
-UNION
 SELECT id, name
 FROM cities
-WHERE id IN (
+WHERE (
 	SELECT id
 	FROM states
 	WHERE name = 'California'
