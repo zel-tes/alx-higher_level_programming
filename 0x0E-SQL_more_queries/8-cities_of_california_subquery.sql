@@ -1,8 +1,8 @@
 -- lists cities of califonia
-SELECT id, name
+SELECT cities.id, cities.name
 FROM cities
-WHERE EXISTS (
-	SELECT 1
+WHERE cities.state_id = (
+	SELECT states.id 
 	FROM states
 	WHERE name = 'California'
 )
