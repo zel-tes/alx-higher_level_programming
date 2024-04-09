@@ -4,8 +4,6 @@ function add (a, b) {
   b = parseInt(process.argv[3]);
   if (a && b) {
     console.log(a + b);
-	 } else {
-		 console.log('NaN');
-	 }
+  } else { console.log('NaN'); }
 }
 add();
