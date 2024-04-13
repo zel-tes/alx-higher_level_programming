@@ -19,9 +19,9 @@ def main():
         cursor = db.cursor()
         cursor.execute(''' SELECT states.id, states.name
         FROM states
-        WHERE states.name = %s
+        WHERE states.name = '{}'
         ORDER BY states.id ASC
-        ''', (state_1,))
+        '''.format(state_1,))
     rows = cursor.fetchall()
     for row in rows:
         print(row)
