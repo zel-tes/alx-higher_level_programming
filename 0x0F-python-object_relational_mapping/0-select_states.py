@@ -3,16 +3,25 @@
 in order of their id '''
 import MySQLdb
 import sys
+
+
 def main():
     if (len(sys.argv) == 4):
         username = sys.argv[1]
         password = sys.argv[2]
         name = sys.argv[3]
-        db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=name)
+        db = MySQLdb.connect(
+                host="localhost",
+                port=3306, user=username,
+                passwd=password,
+                db=name)
         cursor = db.cursor()
-        cursor.execute("SELECT states.id, states.name FROM states ORDER BY states.id ASC")
+        cursor.execute("SELECT states.id, states.name FROM states\
+                ORDER BY states.id ASC")
     rows = cursor.fetchall()
     for row in rows:
         print(row)
+
+
 if __name__ == "__main__":
     main()
