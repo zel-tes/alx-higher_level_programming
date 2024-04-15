@@ -30,7 +30,8 @@ def main():
             row_str = f"{row[0]}"
             print(row_str, end=", ")
             if (i == len(rows) - 1):
-                print(row_str, end="\n")
+                print(row_str)
+        print()
 
 
 if __name__ == "__main__":
